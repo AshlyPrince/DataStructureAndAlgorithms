@@ -1,0 +1,22 @@
+import java.util.*;
+  public class HashSetToArray {
+  public static void main(String[] args) {
+     // Create a hash set
+     HashSet<String> hashSet = new HashSet<String>();
+          //add elements to the hash set
+          hashSet.add("One");
+          hashSet.add("Two");
+          hashSet.add("Three");
+          hashSet.add("Four");
+          hashSet.add("Five");
+      System.out.println("Hash Set is: " + hashSet);
+      // Creating an Array
+      String[] arrayOfNumbers = new String[hashSet.size()];
+      hashSet.toArray(arrayOfNumbers);
+     // Displaying all the array elements
+     System.out.println("Array elements: ");
+      for(String value : arrayOfNumbers){
+        System.out.println(element);
+     }
+   }
+}
