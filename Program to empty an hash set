@@ -1,0 +1,18 @@
+import java.util.*;
+
+  public class EmptyHashSet {
+  public static void main(String[] args) {
+     // Create a hash set
+     HashSet<String> hashSet = new HashSet<String>();
+          // add elements to the hash set
+          hashSet.add("One");
+          hashSet.add("Two");
+          hashSet.add("Three");
+          hashSet.add("Four");
+          hashSet.add("Five");
+    System.out.println("Hash Set is: " +hashSet);
+    // remove elements from hashset
+    hashSet.removeAll(hashSet);
+    System.out.println("Hash Set after removing the elements is: "+hashSet);   
+   }
+}
