@@ -1,0 +1,24 @@
+import java.util.*;
+  public class CompareSets {
+  public static void main(String[] args) {
+     // Create first hash set
+        HashSet<String> firstHashSet = new HashSet<String>();
+     // add elements to the first hash set
+        firstHashSet.add("Red");
+        firstHashSet.add("Green");
+        firstHashSet.add("Black");
+        firstHashSet.add("White");
+        System.out.println("Frist HashSet elements: "+firstHashSet);
+        // Create second hash set
+        HashSet<String> secondHashSet = new HashSet<String>();
+        // add elements to the second hash set
+        secondHashSet.add("Red");
+        secondHashSet.add("Pink");
+        secondHashSet.add("Black");
+        secondHashSet.add("Orange");
+        System.out.println("Second HashSet elements: "+secondHashSet);
+        firstHashSet.retainAll(secondHashSet);
+        System.out.println("HashSet elements are:");
+        System.out.println(firstHashSet);
+     }
+}
